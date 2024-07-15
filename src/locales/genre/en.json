@@ -1,0 +1,14 @@
+{
+  "success": {
+    "list": "Genres list retrieved successfully",
+    "create": "Genre created successfully",
+    "update": "Genre updated successfully",
+    "delete": "Genre deleted successfully",
+    "get": "Genre get retrieved successfully"
+  },
+  "error": {
+    "not_found": "Genre not found",
+    "validation": "Invalid data",
+    "internal_server": "Internal server error"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "success": {
+    "list": "Books list retrieved successfully",
+    "create": "Book created successfully",
+    "update": "Book updated successfully",
+    "delete": "Book deleted successfully",
+    "get": "Book get retrieved successfully"
+  },
+  "error": {
+    "not_found": "Book not found",
+    "validation": "Invalid data",
+    "internal_server": "Internal server error"
+  }
+}
