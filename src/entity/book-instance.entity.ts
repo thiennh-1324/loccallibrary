@@ -1,6 +1,12 @@
 import { Book } from '@/entity/book.entity'
 import { Column, Entity, JoinColumn, ManyToOne, PrimaryGeneratedColumn } from 'typeorm'
 
+export enum BookInstanceStatus {
+  Available = 'Available',
+  Borrowed = 'Borrowed',
+  Reserved = 'Reserved'
+}
+
 @Entity('BookInstance')
 export class BookInstance {
   constructor(data?: Partial<BookInstance>) {
@@ -13,8 +19,8 @@ export class BookInstance {
   @Column()
   imprint: string
 
-  @Column()
-  status: string
+  @Column({ type: 'enum', enum: BookInstanceStatus, default: BookInstanceStatus.Available })
+  status: BookInstanceStatus
 
   @Column({ type: 'date', nullable: true })
   dueDate: Date

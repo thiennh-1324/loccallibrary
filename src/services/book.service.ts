@@ -7,7 +7,7 @@ import { BookResponseType, BookSerializer } from '@/serializers/book.serializer'
 import { AuthorQueryType, findAuthorById } from '@/utils/author-untils'
 import { BaseResponse } from '@/utils/base-response'
 import { BookQueryType, findBookById } from '@/utils/book-utils'
-import { findListGenreById } from '@/utils/genre-untils'
+import { GenreQueryType, findListGenreById } from '@/utils/genre-untils'
 import handleDatabaseOperation from '@/utils/handle-data-async'
 import { CreateBookDto } from '@/view-models/book/createBookDto'
 import { plainToInstance } from 'class-transformer'
@@ -49,7 +49,7 @@ class BookService {
     const author = await findAuthorById(authorId, AuthorQueryType.BASIC, req, res)
     if (!author) return
 
-    const genres = await findListGenreById(bookData.genres, req, res)
+    const genres = await findListGenreById(bookData.genres, GenreQueryType.BASIC, req, res)
     if (!genres) return
 
     const newBook = this.bookRepository.create({
@@ -79,7 +79,7 @@ class BookService {
     const author = await findAuthorById(authorId, AuthorQueryType.BASIC, req, res)
     if (!author) return
 
-    const genres = await findListGenreById(bookData.genres, req, res)
+    const genres = await findListGenreById(bookData.genres, GenreQueryType.BASIC, req, res)
     if (!genres) return
 
     const result = this.bookRepository.merge(book, {
