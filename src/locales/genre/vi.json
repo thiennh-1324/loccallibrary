@@ -1,0 +1,14 @@
+{
+  "success": {
+    "list": "Danh sách thể loại được lấy thành công",
+    "create": "Tạo thể loại thành công",
+    "update": "Cập nhật thể loại thành công",
+    "delete": "Xóa thể loại thành công",
+    "get": "Lấy thông tin thể loại thành công"
+  },
+  "error": {
+    "not_found": "Không tìm thấy thể loại",
+    "validation": "Dữ liệu không hợp lệ",
+    "internal_server": "Lỗi máy chủ nội bộ"
+  }
+}

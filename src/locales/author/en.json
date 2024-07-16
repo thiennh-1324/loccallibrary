@@ -1,0 +1,14 @@
+{
+  "success": {
+    "list": "Authors list retrieved successfully",
+    "create": "Author created successfully",
+    "update": "Author updated successfully",
+    "delete": "Author deleted successfully",
+    "get": "Author get retrieved successfully"
+  },
+  "error": {
+    "not_found": "Author not found",
+    "validation": "Invalid data",
+    "internal_server": "Internal server error"
+  }
+}

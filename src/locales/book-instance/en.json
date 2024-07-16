@@ -1,0 +1,14 @@
+{
+  "success": {
+    "list": "Book instances list retrieved successfully",
+    "create": "Book instance created successfully",
+    "update": "Book instance updated successfully",
+    "delete": "Book instance deleted successfully",
+    "get": "Book instance get retrieved successfully"
+  },
+  "error": {
+    "not_found": "Book instance not found",
+    "validation": "Invalid data",
+    "internal_server": "Internal server error"
+  }
+}

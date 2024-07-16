@@ -1,0 +1,14 @@
+{
+  "success": {
+    "list": "Lấy danh sách sách thành công",
+    "create": "Tạo sách thành công",
+    "update": "Cập nhật sách thành công",
+    "delete": "Xóa sách thành công",
+    "get": "Lấy sách thành công"
+  },
+  "error": {
+    "not_found": "Không tìm thấy sách",
+    "validation": "Dữ liệu không hợp lệ",
+    "internal_server": "Lỗi máy chủ nội bộ"
+  }
+}

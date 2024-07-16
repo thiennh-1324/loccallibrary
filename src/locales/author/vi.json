@@ -1,0 +1,14 @@
+{
+  "success": {
+    "list": "Lấy danh sách tác giả thành công",
+    "create": "Tạo tác giả thành công",
+    "update": "Cập nhật tác giả thành công",
+    "delete": "Xóa tác giả thành công",
+    "get": "Lấy tác giả thành công"
+  },
+  "error": {
+    "not_found": "Không tìm thấy tác giả",
+    "validation": "Dữ liệu không hợp lệ",
+    "internal_server": "Lỗi máy chủ nội bộ"
+  }
+}

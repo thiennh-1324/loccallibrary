@@ -1,0 +1,14 @@
+{
+  "success": {
+    "list": "Danh sách các phiên bản sách được lấy thành công",
+    "create": "Tạo phiên bản sách thành công",
+    "update": "Cập nhật phiên bản sách thành công",
+    "delete": "Xóa phiên bản sách thành công",
+    "get": "Lấy thông tin phiên bản sách thành công"
+  },
+  "error": {
+    "not_found": "Không tìm thấy phiên bản sách",
+    "validation": "Dữ liệu không hợp lệ",
+    "internal_server": "Lỗi máy chủ nội bộ"
+  }
+}
