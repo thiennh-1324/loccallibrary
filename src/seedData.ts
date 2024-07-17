@@ -4,7 +4,7 @@ import { faker } from '@faker-js/faker'
 import { Author } from '@/entity/author.entity'
 import { Genre } from '@/entity/genre.entity'
 import { Book } from '@/entity/book.entity'
-import { BookInstance } from '@/entity/book-instance.entity'
+import { BookInstance, BookInstanceStatus } from '@/entity/book-instance.entity'
 
 async function seed() {
   try {
@@ -105,7 +105,11 @@ async function seedBookInstances(books: Book[]): Promise<void> {
   for (let i = 0; i < 20; i++) {
     const bookInstance = new BookInstance({
       imprint: faker.company.buzzVerb(),
-      status: faker.helpers.arrayElement(['Available', 'Borrowed', 'Reserved']),
+      status: faker.helpers.arrayElement([
+        BookInstanceStatus.Available,
+        BookInstanceStatus.Borrowed,
+        BookInstanceStatus.Reserved
+      ]),
       dueDate: faker.date.future(),
       url: faker.internet.url(),
       book: faker.helpers.arrayElement(books)
